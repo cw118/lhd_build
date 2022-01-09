@@ -1,0 +1,36 @@
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.ajax .cities {
+    display: grid;
+    gap: 24px 20px;
+}
+
+@media screen and (min-width: 700px) {
+    .ajax .cities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .ajax .cities {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ajax .cities {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

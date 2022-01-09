@@ -1,0 +1,59 @@
+A text file containing the base HTML template to start off page creation for this portfolio:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons, fonts and stylesheets -->
+    <link href="lhd-favicon.png" type="image/png" rel="icon">
+    <script src="https://kit.fontawesome.com/d4a72e9209.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="day1/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <title>Day 1: Weather | LHD: Build 2022</title>
+    <meta name="description" content="Projects for LHD: Build 2022">
+</head>
+
+<body>
+    <!-- Customized navbar from W3Schools -->
+    <div class="w3-top" role="navigation">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+            <!-- To be added as more hacks are made :)
+            <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+            -->
+        </div>
+    </div>
+
+    <div class="w3-main">
+        <div class="w3-row w3-padding-32">
+            <div class="w3-container">
+                <h2>Looking for the weather?</h2>
+                <p>Made with the <a href="https://openweathermap.org/" target="_blank">OpenWeather API</a>.</p>
+                <form>
+                    <input type="text" placeholder="Type a city name..." autofocus>
+                    <button type="submit">Look up</button>
+                    <span class="message"></span>
+                </form>
+            </div>
+            <section class="ajax">
+                <div class="w3-container" id="weather">
+                    <ul class="cities"></ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

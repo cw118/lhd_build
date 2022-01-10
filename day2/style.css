@@ -1,0 +1,8 @@
+p#reversed {
+    color: #0000b3;
+    user-select: all;
+}
+
+span#copied {
+    margin-left: 10px;
+}

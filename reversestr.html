@@ -10,12 +10,12 @@
     <link href="lhd-favicon.png" type="image/png" rel="icon">
     <script src="https://kit.fontawesome.com/d4a72e9209.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="day1/style.css">
+    <link rel="stylesheet" href="day2/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-    <title>Day 1: Weather | LHD: Build 2022</title>
+    <title>String Reverse | LHD: Build 2022</title>
     <meta name="description" content="Projects for LHD: Build 2022">
 </head>
 
@@ -25,7 +25,8 @@
         <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
             <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
             <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-            <a href="https://github.com/cw118/lhd_build" class="w3-bar-item w3-button w3-hide-small w3-hover-white" target="_blank">GitHub</a>
+            <a href="https://github.com/cw118/lhd_build" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+                target="_blank">GitHub</a>
             <!-- To be added as more hacks are made :)
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
@@ -37,24 +38,16 @@
     <div class="w3-main">
         <div class="w3-row w3-padding-64">
             <div class="w3-container">
-                <!-- Some styles and JS was done with the help of https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893 -->
-                <h2>Looking for the weather?</h2>
-                <p>Made with the <a href="https://openweathermap.org/" target="_blank" class="w3-text-teal">OpenWeatherMap API</a>.</p>
-                <form>
-                    <input type="text" placeholder="Type a city name..." class="w3-input w3-third" autofocus>&nbsp;
-                    <button type="submit" class="w3-btn w3-blue">Look up</button>
-                    <span class="message"></span>
-                </form>
+                <h2>What string would you like to reverse?</h2>
+                <input type="text" placeholder="Type any string..." class="w3-input" autofocus>
+                <h3>See its reversed version live below!</h3>
+                <p id="reversed"></p>
+                <button class="copy w3-btn w3-blue">Copy string</button><span id="copied"></span>
             </div>
-            <section class="ajax">
-                <div class="w3-container" id="weather">
-                    <ul class="cities"></ul>
-                </div>
-            </section>
         </div>
     </div>
 
-    <script src="day1/script.js"></script>
+    <script src="day2/script.js"></script>
 </body>
 
 </html>

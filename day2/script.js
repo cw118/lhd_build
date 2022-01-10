@@ -30,11 +30,13 @@ btn.addEventListener('click', () => {
             copiedMsg.style.color = '#006600';
             copiedMsg.textContent = 'Copied!';
 
-            // Clear the message after 1500ms to visibly re-notify user of copy success with other attempts
-            setTimeout(() => copiedMsg.textContent = '', 1500);
+            // Clear the message after 1200ms to visibly re-notify user of copy success with other attempts
+            setTimeout(() => copiedMsg.textContent = '', 1200);
         }, () => {
             // In case of failed clipboard write
             copiedMsg.style.color = '#e60000';
+            // This message isn't cleared because the issue can't be resolved later on as with the others 
+            // (e.g.the user can type text to "fix" the problem of copying an empty string)
             copiedMsg.textContent = 'Hmm, looks like your browser doesn\'t support the Clipboard API, which is required for this button to work.';
         });
 
@@ -42,5 +44,8 @@ btn.addEventListener('click', () => {
         // If no text is available to copy, let the user know
         copiedMsg.style.color = '#e60000';
         copiedMsg.textContent = 'Type some text to reverse first!'
+
+        // Clear the message after 1200ms
+        setTimeout(() => copiedMsg.textContent = '', 1200);
     }
 })

@@ -1,15 +1,17 @@
 # 🛠️ LHD: Build
 
-My hackathon projects and programs for MLH's LHD: Build 2022. Most of these are small and simple — given the very limited amounts of time I have to spend on coding, this is how I'm making sure to meet my goal of coding as often as possible, even if it means reviewing familiar concepts or taking tiny steps forward in my learning journey.
+Welcome to my LHD: Build portfolio, where you'll find my hackathon projects and programs for MLH's LHD: Build 2022. Most of these are small and simple — given the very limited amounts of time I have to spend on coding, this is how I'm making sure to meet my goal of coding as often as possible, even if it means reviewing familiar concepts or taking tiny steps forward in my learning journey.
 
 ### [Visit the microsite to see some submissions live-hosted: https://cw118.github.io/lhd_build/](https://cw118.github.io/lhd_build/)
 
+My submissions to Build challenges will all be demoed, if possible, at the GitHub Pages site for this repo linked above.
+
 ### 🔗 Check out these links to find out more about:
 
-- Local Hack Day (LHD): https://localhackday.mlh.io/
-  - LHD: Build: https://localhackday.mlh.io/build
-- Major League Hacking (MLH): https://mlh.io/
-  - MLH's 2022 season schedule: https://mlh.io/seasons/2022/events
+- **Local Hack Day (LHD)**: https://localhackday.mlh.io/
+  - **LHD: Build**: https://localhackday.mlh.io/build
+- **Major League Hacking (MLH)**: https://mlh.io/
+  - **MLH's 2022 season schedule**: https://mlh.io/seasons/2022/events
 
 ### ⛅ [Day 1](https://cw118.github.io/lhd_build/weather.html)
 

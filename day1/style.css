@@ -1,3 +1,9 @@
+/* Styles inspired by and modified from https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893*/
+
+:root {
+    --light: #fff;
+}
+
 button {
     cursor: pointer;
 }
@@ -6,31 +12,52 @@ ul {
     list-style: none;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .ajax .cities {
-    display: grid;
-    gap: 24px 20px;
+    width: 350px;
 }
 
-@media screen and (min-width: 700px) {
-    .ajax .cities {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.ajax .city {
+    position: relative;
+    padding: 35px 10%;
+    border-radius: 20px;
+    border: solid 1px gray;
+    background: var(--light);
+    color: #53627c;
 }
 
-@media screen and (min-width: 1000px) {
-    .ajax .cities {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.ajax .city::after {
+    content: '';
+    width: 90%;
+    height: 45px;
+    position: absolute;
+    bottom: -10px;
+    left: 5%;
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 20px;
+    background: var(--light);
 }
 
-@media screen and (min-width: 1200px) {
-    .ajax .cities {
-        grid-template-columns: repeat(4, 1fr);
-    }
+.ajax figcaption {
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.ajax .city-temp {
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1e2432;
+}
+
+.ajax .city sup {
+    font-size: 0.45em;
+}
+
+.ajax .city-name sup {
+    padding: 0.18em 0.57em;
+    border-radius: 25px;
+    color: var(--light);
+    background: orange;
 }

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+i.fas {
+    font-size: 26px;
+}
+
+body.dark {
+    background: rgb(100 116 139);
+}  

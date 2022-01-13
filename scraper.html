@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons, fonts and stylesheets -->
+    <link href="lhd-favicon.png" type="image/png" rel="icon">
+    <script src="https://kit.fontawesome.com/d4a72e9209.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <title>Web Scraper | LHD: Build 2022</title>
+    <meta name="description" content="Projects for LHD: Build 2022">
+</head>
+
+<body>
+    <!-- Customized navbar from W3Schools -->
+    <div class="w3-top" role="navigation">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a href="https://cw118.github.io/lhd_build/" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+            <a href="https://github.com/cw118/lhd_build" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+                target="_blank">GitHub</a>
+            <a href="https://localhackday.mlh.io/build" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+                target="_blank">LHD: Build</a>
+            <!-- To be added as more hacks are made :)
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+            -->
+        </div>
+    </div>
+
+    <div class="w3-main">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-container">
+                <h2>Web Scraper</h2>
+                <p>For day 4 of LHD: Build, I decided to brush up on my Python skills and try coding a web scraper. Unfortunately, it's not configured to be live-demoed on this site, but you can still try it out!</p>
+                <p>This page is also where you'll find detailed instructions on using my simple web scraper — if you're a <a href="https://cw118.github.io/quetudesinfo/" target="_blank" class="w3-text-indigo">Quebec high school student applying to CEGEP</a>, this scraper might interest you! (If not, I hope the coding aspect of it does!)</p>
+                <h3>Versions</h3>
+                <p>Firstly, it's important to know that <strong>there are two versions of this scraper</strong>:</p>
+                <ul>
+                    <li><strong>A CLI (command-line tool)</strong> — you'll find the instructions below at <a href="#quickstart" class="w3-text-teal">Quickstart</a></li>
+                    <li><a href="https://github.com/cw118/mari-updates" target="_blank" class="w3-text-teal"><strong>A self-updating README</strong> (found in my mari-updates GitHub repository)</a>
+                        <ul>
+                            <li>This one uses a modified version of the Python script I wrote for the CLI, and is automated to scrape and self-update every day at midnight (UTC time) through GitHub Actions. You can read a bit more at my <a href="https://devpost.com/software/mari-web-scraper" target="_blank" class="w3-text-teal">Devpost submission</a> or check it out at its <a href="https://github.com/cw118/mari-updates" target="_blank" class="w3-text-teal">GitHub repo</a>!</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>As the name states, the self-updating version doesn't require any interaction with the user — its job is just to scrape and update with information daily. For the command-line tool, however, there are a few steps to complete in order to use it yourself.</p>
+                <h3 id="quickstart">Quickstart</h3>
+                <p><em>Before you start, make sure to have <a href="https://www.python.org/downloads/" target="_blank" class="w3-text-blue">Python installed on your computer</a>.</em></p>
+                <p>Firstly, go to the GitHub repo hosting this site (and my 2022 LHD: Build code) <a href="https://github.com/cw118/lhd_build" target="_blank" class="w3-text-teal">https://github.com/cw118/lhd_build</a>. You'll want to fork the repository (click the button that says "Fork" near the top), then clone it to your computer. <em>(Note that you don't actually need the entire repo — if you'd like, you can also just download the files in the <code>day4</code> folder.</em></p>
+                <p>If you cloned the repository, feel free to delete all the files <strong>except for the <code>day4</code> folder.</strong> This is the folder containing the scraper's Python script, as well as two empty text files in a folder named <code>scraped</code> that the script will write to when you run the program. As for the image files, <code>scraper-cli.png</code> and <code>scraper-python-settings.png</code>, they can be deleted without a problem (these are the images displayed lower on this very page).</p>
+                <p>Open your terminal and navigate to the directory containing the Python script, <code>main.py</code>. (In other words, make sure you're in the same folder as the location of the <code>main.py</code> file!)</p>
+                <p>Once you're in the right directory, you're ready to use the scraper CLI! Just type <code>python main.py</code> to run the Python script.</p>
+                <p>Some simple instructions should appear in your terminal — follow those and type whichever scrape option you'd like ("admissions", "calendars" or even both!). Then, once you're sure there aren't any spelling errors, press <kbd>Enter</kbd> to start the scraper.</p>
+                <p>Once the scraper's finished, you'll see where the results were written to (in what file) in your terminal. Open up the file(s) to see what the scraper fetched from the website(s) for you!</p>
+                <p>And yeah, that's about it. The scraper is very basic (and admittedly, probably not the most useful) and easy to use — you can also see an image of the command-line tool in action below:</p>
+                <img src="day4/scraper-cli.png" alt="A picture demonstrating the web scraper CLI in use" class="w3-image">
+                <h3>Troubleshooting</h3>
+                <p>It's possible that the links used by the web scraper get moved or even deleted in the future — if this is the case, the Python script will detect the problem and you'll get a suggestion to report the issue at my <a href="https://github.com/cw118/lhd_build" target="_blank" class="w3-text-teal"><code>lhd_build</code> GitHub repository</a>.</p>
+                <p>If you're getting a <code class="w3-text-red">FileNotFound</code> error and you're using VS Code, open up (terminal) settings, search for "python", and make sure you have "Execute In File Dir" checked:</p>
+                <img src="day4/scraper-python-settings.png" alt class="w3-image">
+                <h4><i class="fas fa-exclamation-circle"></i> If you encounter any other problems, please file an issue at the <a href="https://github.com/cw118/lhd_build" target="_blank" class="w3-text-teal"><code>lhd_build</code> GitHub repository</a>.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

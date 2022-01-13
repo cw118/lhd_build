@@ -41,7 +41,7 @@ With the help of some [Flowbite](https://flowbite.com/) components, I created a 
 
 *You can also view it on [Devpost](https://devpost.com/software/a-tailwind-site) and see it for yourself at [its page on the microsite](https://cw118.github.io/lhd_build/day3/tailwind.html)!*
 
-### [Day 4](https://cw118.github.io/lhd_build/scraper.html)
+### 🌐 [Day 4](https://cw118.github.io/lhd_build/scraper.html)
 
 For [day 4 of Build](https://lhd-build-day-4.devpost.com/), I completed the **web scraper** *(build a web scraper application)* challenge to change things up a little. While this project is still related to websites, there aren't any HTML, CSS or JS files that I'd really consider to be a part of it. The main thing it runs on is Python — and I actually ended up building two versions of it. Both scrape content from Marianopolis College's website(s), which is an [anglophone CEGEP in Quebec (click here to find out more about CEGEP!).](https://cw118.github.io/quetudesinfo/)
 

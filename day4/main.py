@@ -1,12 +1,13 @@
 from bs4 import BeautifulSoup
 import requests
+import sys
 
 def main():
     # Ask user what they'd like to scrape and only scrape what they input
     print("Would you like to search for Marianopolis admissions updates and/or calendars?")
     print("Type `admissions` for admissions updates, and/or `calendars` for calendars (you may type both)")
     scrape = input("> ")
-    print("Retrieving your information...")
+    print("Retrieving your information...\n")
 
     if (("admissions" not in scrape.lower()) and ("calendars" not in scrape.lower())):
         # If neither string/command is detected, exit
@@ -18,6 +19,13 @@ def main():
         if "calendars" in scrape.lower():
             scrape_calendars()
 
+def handle_url(url):
+    # Function to check link HTTP status code
+    if requests.get(url).status_code != 200:
+        print("Aw, shucks! Looks like the URL was moved or is unavailable :/")
+        print("Please consider submitting an issue at https://github.com/cw118/lhd_build to inform me of this problem!")
+        sys.exit()
+
 """
 Simple web scraper for Marianopolis College's admissions updates
 """
@@ -25,6 +33,7 @@ Simple web scraper for Marianopolis College's admissions updates
 def scrape_admissions():
     # Grab HTML of the corresponding site
     url_adm = "https://www.bemarianopolis.ca/admissions/admissions-updates/"
+    handle_url(url_adm) # Use the top function to verify/handle the link's HTTP status code
     html_adm = requests.get(url_adm).text
 
     soup = BeautifulSoup(html_adm, "lxml") # Parse with LXML parser
@@ -55,6 +64,7 @@ Simple web scraper for Marianopolis College's academic and course calendars
 def scrape_calendars():
     # Grab HTML of the corresponding site
     url_cal = "https://www.marianopolis.edu/campus-life/calendar/"
+    handle_url(url_cal) # Use the top function to verify/handle the link's HTTP status code
     html_cal = requests.get(url_cal).text
 
     soup = BeautifulSoup(html_cal, "lxml") # Parse with LXML parser

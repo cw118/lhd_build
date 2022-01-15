@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons, fonts and stylesheets -->
+    <link href="lhd-favicon.png" type="image/png" rel="icon">
+    <script src="https://kit.fontawesome.com/d4a72e9209.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <title>Silly API Hack | LHD: Build 2022</title>
+    <meta name="description" content="Projects for LHD: Build 2022">
+</head>
+
+<body>
+    <!-- Customized navbar from W3Schools -->
+    <div class="w3-top" role="navigation">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a href="https://cw118.github.io/lhd_build/" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+            <a href="https://github.com/cw118/lhd_build" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+                target="_blank">GitHub</a>
+            <a href="https://localhackday.mlh.io/build" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+                target="_blank">LHD: Build</a>
+            <!-- To be added as more hacks are made :)
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+            -->
+        </div>
+    </div>
+
+    <div class="w3-main">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-container">
+                <div>
+                    <h2>Here are two random (and probably useless) programs that use APIs!</h2>
+                    <h3>Wanna hear a joke? (<a href="https://jokes.one/api/joke/" target="_blank" class="w3-text-teal">Jokes API</a>)</h3>
+                    <p><em>The button is disabled after one click to avoid invoking the Joke API endpoint too many times.</em></p>
+                    <button id="get-joke" class="w3-btn w3-blue">Get the Joke of the Day</button>
+                    <p id="joke-box" class="w3-text-indigo"></p>
+                    <br>
+                </div>
+                <div>
+                    <h3>Get your Pokémon/ISS username here! (<a href="https://pokeapi.co/" target="_blank" class="w3-text-teal">PokéAPI</a> and <a href="https://wheretheiss.at/w/developer" target="_blank" class="w3-text-teal">Where the ISS at?</a>)</h3>
+                    <p><em>Don't go too crazy using this generator — it'll raise hosting costs for PokéAPI and could surpass the "Where the ISS at?" request limit!</em></p>
+                    <p><strong>This username generator combines the name (full or partial) of a Pokémon with numbers related to the location of the ISS (International Space Station).</strong></p>
+                    <button id="get-username" class="w3-btn w3-light-blue">Generate Poké-space username</button>
+                    <p id="username-box"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="day6/script.js"></script>
+</body>
+
+</html>

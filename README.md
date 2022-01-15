@@ -53,6 +53,8 @@ The second version is a [self-updating README](https://github.com/cw118/mari-upd
 
 *Read more about the two versions of the scraper I coded on [Devpost](https://devpost.com/software/mari-web-scraper) and at [the day 4 page on the microsite](https://cw118.github.io/lhd_build/scraper.html)!*
 
+*Go have a look at my [web scrape-based self-updating README](https://github.com/cw118/mari-updates)!*
+
 ---
 
 ### 🛏️ Day 5 ("Rest day")
@@ -64,3 +66,17 @@ I also added some improvements and fixes to my [`mari-updates` web-scraper repo]
 Some other things I worked on were making various modifications to this repo (any relevant updates, minor changes in `tailwind.html`, and removing superfluous/unnecessary HTML tag classes in `index.html`), as well as a few open source contributions. Lastly, I opened issues to track tasks in my own repos as a sort of reminder for what I want add and enhance.
 
 And yeah, that was about it for today! Hopefully I'll be able to create a hack to submit to Devpost for day 6 — even better if it's something that can be live-demoed on my microsite 😊
+
+---
+
+### 😜 [Day 6](https://cw118.github.io/lhd_build/sillyapis.html)
+
+Back at it again for [LHD: Build day 6](https://lhd-build-day-6.devpost.com/)! I decided to practice my JavaScript, as well as adding and using APIs for this not-very-useful mini-project — coincidentally, it combines two of day 6's challenges, "build with an API" and "create a useless invention hack"!
+
+This is a submission you'll be able to see and try for yourself on my [microsite](https://cw118.github.io/lhd_build) *(yay!)*. I don't have much to say here, because all the code really does is:
+1. Fetch and display [JokesAPI's](https://jokes.one/api/joke/) Joke of the Day,
+2. Combine a [Pokemon name](https://pokeapi.co/) (longer names are shortened a bit, plus shoutout to PokeAPI ⚡) and the [ISS' altitude coordinate](https://wheretheiss.at/w/developer) (thanks to the *Where the ISS at?* 🛰️ API) to generate a "random" username for you. 
+
+If that piques your interest, and/or you're looking for something silly, definitely do [check it out](https://cw118.github.io/lhd_build/sillyapis.html)!
+
+*Take a look at my [Devpost submission](https://devpost.com/software/random-apis) and the [day 6 page on the microsite](https://cw118.github.io/lhd_build/sillyapis.html)!*

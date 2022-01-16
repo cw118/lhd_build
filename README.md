@@ -89,4 +89,12 @@ Wow, LHD: Build really flew by fast! For the [7th and final day of LHD: Build](h
 
 All in all, despite these issues, I had fun coding the simple script and learning more about pi and ways to calculate it. There's no live demo for day 7 on my microsite, but you'll find a summary and some instructions on trying out the Python program on the [day 7 page of the site](https://cw118.github.io/lhd_build/pi.html). The file containing the pi program is `pi.py` (*get it?* 🙃) and can be found in the `day7` folder of this repo, so definitely take a look to see my code and for a brief explanation of the Nilakantha Series!
 
-*Take a look at my [Devpost submission](https://devpost.com/software/pi-with-nilakantha), the [day 7 page on the microsite](https://cw118.github.io/lhd_build/pi.html), and the [`pi.py` script in this repo](https://github.com/cw118/lhd_build/blob/main/day7/pi.py)!
+*Take a look at my [Devpost submission](https://devpost.com/software/pi-with-nilakantha), the [day 7 page on the microsite](https://cw118.github.io/lhd_build/pi.html), and the [`pi.py` script in this repo](https://github.com/cw118/lhd_build/blob/main/day7/pi.py)!*
+
+---
+
+### 🏁 *The end*
+
+And that's it for LHD: Build 2022! This hackathon was so much fun — I learned and practiced a ton, got to code every day in several languages, and I can't believe how quickly the week went by. Hoping and looking forward to joining Global Hack Week *(Local Hack Day is being rebranded!)* in the future and participating in more MLH events!
+
+Happy hacking everyone 😄💻

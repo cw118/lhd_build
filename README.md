@@ -1,6 +1,6 @@
 # 🛠️ LHD: Build 2022
 
-Welcome to my LHD: Build portfolio, where you'll find my hackathon projects and programs for MLH's LHD: Build 2022. Most of these are small and simple — given the very limited amounts of time I have to spend on coding, this is how I'm making sure to meet my goal of coding as often as possible, even if it means reviewing familiar concepts or taking tiny steps forward in my learning journey.
+Welcome to my LHD: Build portfolio, where you'll find my hackathon projects and programs for MLH's LHD: Build 2022. Most of these are small and simple — given the very limited amounts of time I have to spend on coding, this is how I'm making sure to meet my goal of coding as often as possible, even if it means reviewing familiar concepts or taking tiny steps forward in my learning journey. ***(Note: Local Hack Day is now being rebranded as Global Hack Week!)***
 
 ### [Visit the microsite to see some submissions live-hosted: https://cw118.github.io/lhd_build/](https://cw118.github.io/lhd_build/)
 
@@ -80,3 +80,13 @@ This is a submission you'll be able to see and try for yourself on my [microsite
 If that piques your interest, and/or you're looking for something silly, definitely do [check it out](https://cw118.github.io/lhd_build/sillyapis.html)!
 
 *Take a look at my [Devpost submission](https://devpost.com/software/random-apis) and the [day 6 page on the microsite](https://cw118.github.io/lhd_build/sillyapis.html)!*
+
+---
+
+### 🥧 [Day 7](https://cw118.github.io/lhd_build/pi.html)
+
+Wow, LHD: Build really flew by fast! For the [7th and final day of LHD: Build](https://lhd-build-day-6.devpost.com/), which shares a Devpost link with day 6, I worked with Python yet again to implement Nilakantha's Series and calculate `pi`. There's a lot of room for improvement with this project — most notably the ridiculously long runtime just to get some digits of pi, as well as the lack of accuracy once you're past the 13th digit after the decimal.
+
+All in all, despite these issues, I had fun coding the simple script and learning more about pi and ways to calculate it. There's no live demo for day 7 on my microsite, but you'll find a summary and some instructions on trying out the Python program on the [day 7 page of the site](https://cw118.github.io/lhd_build/pi.html). The file containing the pi program is `pi.py` (*get it?* 🙃) and can be found in the `day7` folder of this repo, so definitely take a look to see my code and for a brief explanation of the Nilakantha Series!
+
+*Take a look at my [Devpost submission](https://devpost.com/software/pi-with-nilakantha), the [day 7 page on the microsite](https://cw118.github.io/lhd_build/pi.html), and the [`pi.py` script in this repo](https://github.com/cw118/lhd_build/blob/main/day7/pi.py)!
